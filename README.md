@@ -31,7 +31,6 @@ This is a simple application that allows users to search for movies using the OM
 
 1. Enter a movie title into the search bar and click "Search"
 2. Movie results will appear in a responsive grid layout
-3. Click on a movie to view more details
 
 ## Contributing
 
