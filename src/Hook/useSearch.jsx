@@ -22,7 +22,7 @@ const useSearch = () => {
       setSearchError({
         ...searchError,
         status: true,
-        message: 'Debes ingresar algo para buscar',
+        message: 'You must enter something to search',
       });
       return;
     }
@@ -30,7 +30,7 @@ const useSearch = () => {
       setSearchError({
         ...searchError,
         status: true,
-        message: 'La busqueda tiene que tener como minimo 3 caracteres',
+        message: 'The search must have a minimum of 3 characters',
       });
       return;
     }

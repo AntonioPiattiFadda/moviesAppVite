@@ -4,6 +4,7 @@ import './App.css';
 import useMovies from './Hook/useMovies';
 import useSearch from './Hook/useSearch';
 import debounce from 'just-debounce-it';
+import { MoonLoader } from 'react-spinners';
 
 function App() {
   const [sort, setSort] = useState('');
@@ -50,7 +51,9 @@ function App() {
           <button type="submit">Search</button>
         </div>
         {searchError.status && (
-          <span className='errorMessage' style={{ color: 'red' }}>{searchError.message} </span>
+          <span className="errorMessage" style={{ color: 'red' }}>
+            {searchError.message}{' '}
+          </span>
         )}
         <div className="selectContainer">
           <label htmlFor="">Order by</label>
@@ -62,7 +65,12 @@ function App() {
       </form>
       <main>
         {loading ? (
-          <h2>Loading movies...</h2>
+          <div className="loadingContainer">
+            <span>
+              <MoonLoader color="#36d7b7" />
+            </span>
+            <h2>Loading movies...</h2>
+          </div>
         ) : (
           <MovieListContainer movies={movies} error={error} />
         )}

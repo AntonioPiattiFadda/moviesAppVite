@@ -13,3 +13,14 @@ form {
   position: absolute;
   transform: translateY(-70%);
 }
+.loadingContainer {
+  display: grid;
+  place-content: center;
+}
+.loadingContainer span {
+  place-self: center;
+}
+
+.loadingContainer h2 {
+  font-family: 'Waltograph', cursive;
+}
