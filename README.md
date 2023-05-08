@@ -21,7 +21,7 @@ This is a simple application that allows users to search for movies using the OM
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/movie-search-app.git`
+1. Clone the repository: `git clone https://github.com/AntonioPiattiFadda/moviesAppVite.git`
 2. Install dependencies: `npm install`
 3. Get an API key from OMDb API by registering your email on their website
 4. Create a `.env` file and add your API key: `VITE_API_KEY=your-api-key`
@@ -31,7 +31,6 @@ This is a simple application that allows users to search for movies using the OM
 
 1. Enter a movie title into the search bar and click "Search"
 2. Movie results will appear in a responsive grid layout
-3. Click on a movie to view more details
 
 ## Contributing
 
